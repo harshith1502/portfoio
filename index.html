@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  </head>
+  <body>
+  <header>
+            <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Harshit Nambaru</label>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+            </nav>
+  </header>
+  <section id="about">
+               
+
+    <div class="box">
+        <img src="Snapchat-2069198479-modified.png" alt="" width="400px">
+        <img src="Snapchat-2069198479-modified.png" alt="" width="400px">
+    </div>
+    <div class="cont">
+    <p><b>Hello Friends,</b></p>
+    
+    <p><b>I'm <span id="hashu">Harshit Nambaru</span></b></p>
+   
+    <span>I Am Into <span id="autotype"></span></span>
+    </div>
+    <button class="button-89" onclick="scrollToSection('me')">Find More&#128071;</button>
+  </section>
+ 
+   
+
+  <script>
+    var typed = new Typed('#autotype', {
+      strings: ['FullStackDevelopment','Web Designing'],
+      typeSpeed: 30,
+      backSpeed: 20,
+      loop: true
+    });
+  </script>
+
+
+
+  </body>
+</html>

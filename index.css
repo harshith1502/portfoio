@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: montserrat;
+  }
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: rgb(223 222 222 / 80%);
+    backdrop-filter: saturate(180%) blur(10px);
+    
+  }
+  nav{
+
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color:  #9badb4;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(5, 99, 104, 0.518);
+    font-family: "Oleo Script", sans-serif;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color:  #9badb4;
+    text-shadow: 1px 1px 2px rgba(5, 99, 104, 0.518);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: "Oleo Script", sans-serif;
+  }
+  header nav a:hover {
+    color: rgb(21, 94, 101);
+    background-color: #a29e9e73;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color:#828282;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+
+  #about{
+    background: url(bb.gif) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+    margin-top: 50px;
+    background-position: center;
+  }
+
+
+
+#about img{
+    margin-left: 100px;
+}
+
+.cont{
+    position: relative;
+    top:160px;
+}
+
+
+#about p{
+  color:#76848a;
+   font-weight: bold;
+   text-shadow: 1px 1px 2px #373b44;
+   font-family: "Oleo Script", sans-serif;
+    font-size: 50px;
+    margin-bottom: 15px; 
+   
+  
+}
+#hashu{
+  color: rgb(21, 94, 101);
+  background-image: none;
+  font-size: 50px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+span {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5em;
+  transform: translate(-50%,-50%);
+  background-image: linear-gradient(gold, gold);
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+   transition: background-size .7s, background-position .5s ease-in-out;
+   color:#76848a;
+   font-weight: bold;
+   text-shadow: 1px 1px 2px #373b44;
+   font-family: "Oleo Script", sans-serif;
+}
+
+span:hover {
+  background-size: 100% 100%;
+  background-position: 0% 100%;
+  transition: background-position .7s, background-size .5s ease-in-out;
+}
+
+#autotype{
+  font-size: 1em;
+  color: rgb(21, 94, 101);
+ }
+
+.box{
+    
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    float: left;
+    margin-right: 300px;
+    position: relative;
+    top: 100px;
+
+}
+
+.box img{
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.box img:nth-child(2){
+     transform: rotateY(180deg);
+ 
+ }
+.box:hover img:nth-child(2){
+   transform: rotateY(0deg);
+ }
+.box:hover img:nth-child(1){
+     transform: rotateY(180deg);
+ }
+
+
+ #about button{
+   position: relative;
+   top: 350px;
+   margin-left: -380px;
+
+ }
+
+ 
+ 
+ .button-89 {
+   --b: 3px;   
+   --s: .45em; 
+   --color: #373B44;
+   font-family: 'Kablammo', cursive;
+   
+   padding: calc(.2em + var(--s)) calc(.1em + var(--s));
+   color: var(--color);
+   --_p: var(--s);
+   background:
+     conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+     var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+   transition: .3s linear, color 0s, background-color 0s;
+   outline: var(--b) solid #0000;
+   outline-offset: .6em;
+   font-size: 25px;
+ 
+   border: 0;
+ 
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+ }
+ 
+ .button-89:hover,
+ .button-89:focus-visible{
+   --_p: 0px;
+   outline-color: var(--color);
+   outline-offset: .05em;
+ }
+ 
+ .button-89:active {
+   background: var(--color);
+   color: #fff;
+ }
+
+
+
+@media screen and (max-width: 850px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+   
+
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #cccccc;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+      font-weight: bold;
+      color:#547b82;
+    }
+    header nav a:hover {
+      color: rgb(21, 94, 101);
+      background-color: #fafafa;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+
+   span{
+    font-size: 2em;
+   }
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  label.logo{
+    font-size: 20px;
+    padding-left: 50px;
+  }
+
+  #about{
+    background-size: 600px 1000px;
+    height: calc(105vh - 80px);
+    
+    
+  }
+  span{
+    font-size: 1em;
+    font-weight: 0;
+    text-shadow: none;
+   }
+
+   #autotype{
+    font-size: 1em;
+    font-weight: 0;
+    text-shadow: none;
+   }
+
+   .box img{
+    width:85%;
+    height: 70%;
+   }
+
+   #about button{
+     position: relative;
+     top:-330px;
+     margin-left: 20px;
+     width: 130px;
+     font-size: 15px;
+   }
+   #about img{
+    margin-left: 0px;
+   }
+ 
+
+   .cont{
+    position: relative;
+    top: -350px;
+    margin-left: 20px;
+   }
+   
+   .box {
+    position: relative;
+    top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .box img {
+    margin: 10px auto;
+  }
+}
