@@ -2,57 +2,196 @@
 
 <html lang="en" dir="ltr">
   <head>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <meta charset="utf-8">
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   </head>
   <body>
-  <header>
-            <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <label class="logo">Harshit Nambaru</label>
-            <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Feedback</a></li>
-            </ul>
-            </nav>
-  </header>
-  <section id="about">
-               
 
-    <div class="box">
-        <img src="Snapchat-2069198479-modified.png" alt="" width="400px">
-        <img src="Snapchat-2069198479-modified.png" alt="" width="400px">
-    </div>
-    <div class="cont">
-    <p><b>Hello Friends,</b></p>
-    
-    <p><b>I'm <span id="hashu">Harshit Nambaru</span></b></p>
-   
-    <span>I Am Into <span id="autotype"></span></span>
-    </div>
-    <button class="button-89" onclick="scrollToSection('me')">Find More&#128071;</button>
-  </section>
+  
+
+      <header>
+                <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <label class="logo">Harshit Nambaru</label>
+                <ul>
+                    <li><a onclick="scrollToSection('#about');closenav();">Home</a></li>
+                    <li><a onclick="scrollToSection('#me');closenav();" >About</a></li>
+                    <li><a onclick="scrollToSection('#skills');closenav();">Skills</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+                </nav>
+      </header>
+
+     
  
-   
 
-  <script>
-    var typed = new Typed('#autotype', {
-      strings: ['FullStackDevelopment','Web Designing'],
-      typeSpeed: 30,
-      backSpeed: 20,
-      loop: true
-    });
-  </script>
+      <section id="about" >     
+          <div class="box">
+              <img src="Snapchat-2069198479-modified.png" alt="" width="400px">
+              <img src="Snapchat-2069198479-modified.png" alt="" width="400px">
+          </div>
+          <div class="cont">
+          <p><b>Hello Friends,</b></p>
+          
+          <p><b>I'm <span id="hashu">Harshit Nambaru</span></b></p>
+        
+          <span>I Am Into <span id="autotype"></span></span>
+          </div>
+          <button class="button-89" onclick="scrollToSection('#me')">Find More&#128071;</button>
+      </section>
+      
+      <div class="icon-bar">
+        <a  class="facebook"><i class="fa fa-facebook"></i></a> 
+        <a  class="twitter"><i class="fa fa-twitter"></i></a> 
+        <a  class="google"><i class="fa fa-envelope"></i></a> 
+        <a  class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a  class="youtube"><i class="fa fa-github"></i></a> 
+      </div> 
+
+
+      <section id="me"  >
+          <div class="typewriter"  >
+            <div class="card"><i class="fas fa-user-alt" ><span class="heading" >ABOUT ME</span></i></div>
+            <div class="row"   >
+              <img src="Untitled design-modified.png" alt="">
+              <div class="icons-column">
+                <i class="fa fa-envelope"  style="font-size:20px;color:rgb(139, 113, 113)"><span class="span">harshithnambaru1502@gmail.com</span></i>
+                <i class="fa fa-phone" style="font-size:20px;color:rgb(139, 113, 113)"><span class="span">+91-9392816316</span></i>
+                <i class="fas fa-map-marker-alt" style="font-size:20px;color:rgb(139, 113, 113)"><span class="span">Visakhapatnam,AndhraPradesh,India-530044</span></i>
+              </div>
+            </div>
+            <h1>HARSHITH NAMBARU.</h1>
+            <br>  
+            <h1>Currently Pursuing My Sophomore Year Engineering Focused On Computer Science</h1>
+            <h1>Engineering . I Am Very Passionate About Improving My Coding Skills & Developing</h1>
+            </div>
+      </section>
+
+      <section id="skills">
+          
+            <div class="skills">  
+            
+              <div class="card1"><i class="fas fa-edit" ><span class="heading" >SKILLS</span></i></div>
+              <div class="skills-box">  
+                  <div class="skills-img">
+                  <img src="https://cdn.freebiesupply.com/logos/large/2x/html-5-logo-png-transparent.png" alt="" class="skills-icons">
+                  </div>
+                  <div class="skills-textbox">HTML5</div>
+              </div>
+
+              <div class="skills-box"> 
+                  <div class="skills-img">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" alt="" class="skills-icons">
+                  </div>
+                  <div class="skills-textbox">CSS3</div>
+              </div>
+
+              <div class="skills-box">
+                  <div class="skills-img">
+                  <img src="https://icon-library.net/images/javascript-icon-png/javascript-icon-png-23.jpg" alt="" class="skills-icons">
+                  </div>
+                  <div class="skills-textbox">JavaScript</div>  
+              </div>
+
+              <div class="skills-box">     
+                  <div class="skills-img">
+                  <img src="png-transparent-microsoft-azure-sql-database-microsoft-sql-server-cloud-computing-blue-text-logo.png" alt="" class="skills-icons">
+                  </div>
+                  <div class="skills-textbox">SQL</div>
+              </div>
+
+              
+              <div class="skills-box">
+                <div class="skills-img">
+                <img src="https://mildaintrainings.com/wp-content/uploads/2017/11/react-logo.png" alt="" class="skills-icons">
+                </div>
+                <div class="skills-textbox">React</div>
+            </div>
+
+              <div class="skills-box">     
+                  <div class="skills-img">
+                  <img src="php-removebg-preview.png" alt=""  width="70px" height="65px" class="skills-icons" >
+                  </div>
+                  <div class="skills-textbox">PHP</div>
+              </div>
+
+              <div class="skills-box">     
+                  <div class="skills-img">
+                  <img src="django-pony.png" alt="" height="70px" class="skills-icons">
+                  </div>
+                  <div class="skills-textbox">DJANGO</div>
+              </div>
+              
+              <div class="skills-box">     
+                  <div class="skills-img">
+                  <img src="72537-icons-python-programming-computer-social-tutorial.png" alt="" class="skills-icons">
+                  </div>
+                  <div class="skills-textbox">PYTHON</div>
+              </div>
+
+              <div class="skills-box">     
+                  <div class="skills-img">
+                  <img src="5978064.png" alt="" class="skills-icons">
+                  </div>
+
+                  <div class="skills-textbox">Cloud</div>
+              </div>
+            </div>
+
+      </section>
+  
+   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script src="app.js"></script>
+     
+      <script>
+        var typed = new Typed('#autotype', {
+          strings: ['FullStackDevelopment','Web Designing'],
+          typeSpeed: 30,
+          backSpeed: 20,
+          loop: true
+        });
+
+        function scrollToSection(sectionId) {
+          const section = document.querySelector(sectionId);
+          if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+
+        function closenav() {
+          document.getElementById('check').checked = false;
+        }
+      </script>
+
+
 
 
 
